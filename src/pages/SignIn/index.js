@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Form, Input } from '@rocketseat/unform';
 import * as Yup from 'yup';
-import logo from '~/assets/logo.svg';
+import logo from '~/assets/logo.png';
 import { signInRequest } from '~/store/modules/auth/actions';
 
 const schema = Yup.object().shape({
@@ -24,14 +24,16 @@ export default function SignIn() {
   }
   return (
     <>
-      <img src={logo} alt="Faz Negócio" />
-      <Form schema={schema} onSubmit={handleSubmit}>
-        <Input name="email" type="email" placeholder="Seu Email" />
-        <Input name="password" type="password" placeholder="Sua senha" />
+        <Form schema={schema} onSubmit={handleSubmit}>
+          <img className="imgLogo" src={logo} alt="Faz Negócio" />
 
-        <button type="submit">{loading ? 'Carregando...' : 'Entrar'}</button>
-        <Link to="/register">Criar conta</Link>
-      </Form>
+          <Input name="email" type="email" placeholder="Seu Email" />
+          <Input name="password" type="password" placeholder="Sua senha" />
+
+          <button type="submit">{loading ? 'Carregando...' : 'Entrar'}</button>
+          <Link to="/register">Criar conta</Link>
+        </Form>
+
     </>
   );
 }

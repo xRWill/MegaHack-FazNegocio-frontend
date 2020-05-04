@@ -11,13 +11,25 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
   width: 100%;
-  max-width: 315px;
+  max-width: 415px;
   text-align: center;
 
   form {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.4); /* qual cor ? */
+    border-radius: 11px;
+    padding: 15px;
+    margin: 50px 15px 15px;
+
+    img.imgLogo {
+      position:relative;
+      top: -75px;
+      width:150px;
+      align-self: center;
+      margin-bottom: -60px; /* Gambi */
+    }
+
 
     input {
       background: rgba(0, 0, 0, 0.1);

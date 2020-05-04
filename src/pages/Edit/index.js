@@ -59,7 +59,7 @@ export default function Edit({ match }) {
           timeFormat="p"
           timeIntervals={60}
           dateFormat="d 'de' MMMM 'de' yyyy 'às' HH:mm"
-          placeholderText="Data de nascimento"
+          placeholderText="Data de fundação"
         />
 
         <Input name="nome_representante" placeholder="Nome Representante" />

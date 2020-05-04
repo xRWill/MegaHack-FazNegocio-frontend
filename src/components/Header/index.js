@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import { Container, Content, Profile, Logout } from './styles';
-import logo from '~/assets/logo.svg';
+import logo from '~/assets/logo.png';
 import { signOut } from '~/store/modules/auth/actions';
 
 export default function Header() {

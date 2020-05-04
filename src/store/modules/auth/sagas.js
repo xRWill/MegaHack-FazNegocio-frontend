@@ -31,13 +31,13 @@ console.log(response)
 }
 
 export function* signUp({ payload }) {
-  const { name, email, password } = payload;
+  const { name, email, password, cellphone } = payload;
   try {
     yield call(api.post, 'register', {
       name,
       email,
       password,
-      // provider: true,
+      cellphone
     });
     toast.success('Usuário cadastrado.');
     history.push('/');

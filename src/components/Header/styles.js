@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 
 export const Container = styled.div`
-  background: #000;
+  background: rgba(0,0,0,0.4);
   padding: 0 30px;
 `;
 
@@ -18,7 +18,7 @@ export const Content = styled.div`
     align-items: center;
 
     img {
-      width: 32px;
+      width: 70px;
       margin-right: 20px;
     }
 
