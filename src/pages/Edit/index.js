@@ -66,14 +66,22 @@ export default function Edit({ match }) {
         <Input name="cnae_principal" placeholder="CNAE Principal" />
         <hr />
         <h2>Expectativas:</h2>
-
         <div className="options">
-        <div><Check name="conectar_a_fornecedores" label="Conectar a Fornecedores" /></div>
+{companyType === 'lojista' ?
+        <><div><Check name="conectar_a_fornecedores" label="Conectar a Fornecedores" /></div>
         <div><Check name="solucoes_inovadoras" label="Soluções inovadoras" /></div>
         <div><Check
           name="diversificar_catalogo"
           label="Diversificação de Catálogo"
-        /></div>
+        /></div></>
+      :
+      <><div><Check name="conectar_a_fornecedores" label="Aumentar carteira de cientes" /></div>
+      <div><Check name="solucoes_inovadoras" label="Oferecer soluções inovadoras" /></div>
+      <div><Check
+        name="diversificar_catalogo"
+        label="Catálogo online"
+      /></div></>
+      }
         </div>
         <button type="submit">
           <MdEdit /> Salvar Empresa

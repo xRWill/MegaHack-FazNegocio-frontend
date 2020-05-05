@@ -61,11 +61,10 @@ export const Container = styled.div`
 
 
     div.options {
-      flex:0;
-       justify-content: flex-start;
+
 
       div {
-        flex: 0;
+
         color: #C1C1CF;
         align-self: flex-start;
         margin: 0 0 10px 5px;
